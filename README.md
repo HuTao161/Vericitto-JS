@@ -25,11 +25,12 @@ Pendekatan ini memungkinkan developer untuk mendefinisikan UI hanya dengan konfi
 Vericitto JS menggunakan sistem CID (Cito ID).
 
 CID adalah identifier unik yang berfungsi sebagai:
-
+```console
 * Identitas komponen
 * Penghubung antara tombol dan modal
 * Referensi internal untuk event handling
 * Pencegah konflik antar komponen
+```
 
 Setiap komponen `<v-rct>` wajib memiliki CID yang unik dalam satu halaman. CID dapat dianggap sebagai “ID internal khusus Vericitto” untuk mengontrol function komponen.
 
@@ -38,10 +39,12 @@ Komponen: Modal / Pop Up
 Salah satu implementasi DSL dalam Vericitto JS adalah komponen Modal / Pop Up.
 
 Modal adalah jendela overlay yang muncul di atas halaman untuk:
+```console
 * Menampilkan informasi
 * Memberikan notifikasi
 * Menampilkan pesan penting
 * Interaksi singkat dengan pengguna
+```
 
 Dengan Vericitto JS, modal dibuat menggunakan satu tag DSL tanpa perlu membuat struktur div manual.
 
