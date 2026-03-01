@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vericitto JS</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: radial-gradient(circle at top, #1e293b, #020617);
+        overflow-x: hidden;
+        padding: 64px;
+      }
+
+      /* ================= PARTICLE CANVAS ================= */
+      /* #particleCanvas {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+      } */
+
+      /* ================= CARD (GLOBAL) ================= */
+      /* .card {
+        background: white;
+        border-radius: 8px;
+        position: relative;
+        z-index: 1;
+        max-width: 1080px;
+        width: 100%;
+        margin: 12px auto;
+        padding: 12px;
+      } */
+
+      /* ================= GRAPH CARD ================= */
+      /* #graph-line,
+      #graph-waves,
+      #graph-chart {
+        padding: 10px;
+      }
+
+      .card canvas {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+      } */
+
+      /* ================= MOBILE ================= */
+      /* @media (max-width: 768px) {
+        .card {
+          max-width: 92%;
+          padding: 10px;
+        }
+
+        #navbar.card {
+          padding: 8px 10px;
+        }
+      } */ */
+    </style>
+  </head>
+
+  <body>
+    <!-- PARTICLE BACKGROUND
+  <canvas id="particleCanvas"></canvas>
+
+  <!- ===== FRAMEWORK CODE ===== -->
+    <!-- NAVBARS -->
+
+    <!-- <v-rct vericitto></v-rct>
+
+  <v-rct 
+  vid="landing"
+  title="Vericitto JS"
+  subtitle="Vericitto JS: Write less, build more, launch instantly
+Instant UI, zero headache."
+  cta="Try now"
+></v-rct>
+
+
+  <v-rct class="card" 
+         brand="MyApp"
+         color="red"
+         menu='[{"label":"Home","link":"#"},{"label":"About","link":"#"}]'>
+  </v-rct>
+
+  <v-rct class="card"
+         brand="MyApp"
+         data-color="#22C55E"
+         menu='[{"label":"Home","link":"#"},{"label":"About","link":"#"}]'>
+  </v-rct> -->
+
+    <!-- GRAPHS -->
+    <!-- <v-rct class="card" vid="graph-line" data-color="#22C55E" data-type="day" label="User Aktif" data-value="[5, 7, 4, 9, 6, 8, 5, 7, 6, 10, 8, 9]"></v-rct>
+  <v-rct class="card" vid="graph-line" data-color="#22C55E" data-type="day" label="Profit Per Hari" data-value="[5, 7, 4, 9, 6, 8, 5, 7, 6, 10, 8, 9]"></v-rct>
+
+  <v-rct class="card" vid="graph-waves"
+         data-color="#FECACA"
+         inline-color="#EF4444"
+         data-type="month"
+         label="Jumlah Error"
+         data-value="[5, 7, 4, 9, 6, 8, 5, 7, 6, 10, 8, 9]">
+  </v-rct>
+
+  <v-rct class="card" vid="graph-chart"
+         data-color="#3B82F6"
+         data-type="year"
+         label="Total Penjualan"
+         data-value="[5, 7, 4, 9, 6, 8, 5, 7, 6, 10, 8, 9]">
+  </v-rct>
+
+  <v-rct vid="footer" 
+       text="© 2026 MyApp. All rights reserved."
+       color="#1E293B"
+       text-color="#ffffff"
+       links='[{"label":"Home","href":"#"},{"label":"About","href":"#"},{"label":"Contact","href":"#"}]'>
+  </v-rct> -->
+    <!-- ========================================= -->
+
+    <v-rct
+      cid="navbar"
+      brand="Vericitto"
+      theme="midnight"
+      type="rounded"
+      sticky="true"
+      search="true"
+      notifications="12"
+      text-color="#ffffff"
+      menu="Home:/,
+        Products:/products,
+        Solutions:/solutions,
+        Pricing:/pricing,
+        Docs:/docs,
+        Blog:/blog,
+        Contact:/contact"
+    >
+    </v-rct>
+
+    <v-rct
+      cid="countdown"
+      target="2026-02-14T00:00:00"
+      style="font-size: 18px; color: navy"
+    ></v-rct>
+    
+    <v-rct 
+  cid="clock" 
+  bg-color="#2d2d2d" 
+  text-color="#00ffcc" 
+  font-size="2.5rem" 
+  padding="16px 24px"
+  border-radius="16px">
+</v-rct>
+    <v-rct cid="progress" value="10" max="100" style="margin-top: 10px"></v-rct>
+    <v-rct
+      cid="marquee"
+      text="Breaking News: AppWidgets JS is awesome!"
+      speed="3"
+      style="color: green"
+    ></v-rct>
+
+    <v-rct
+      cid="modal"
+      title="Hello World"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      button-text="Open"
+      close-type="icon"
+      button-color="red"
+      button-text-color="white"
+      title-color="black"
+      content-color="black"
+    ></v-rct>
+
+    <v-rct cid="accordion" title="FAQ 1" content="This is the answer."></v-rct>
+
+    <v-rct
+      cid="barchart"
+      data="50,80,30,70"
+      width="300px"
+      height="100px"
+    ></v-rct>
+
+    <v-rct cid="digital-clock" style="font-size: 24px; color: orange"></v-rct>
+
+    <v-rct
+      cid="quote"
+      quotes="Keep going|Never give up|Stay positive"
+      style="font-size: 18px; color: green"
+    ></v-rct>
+
+    <v-rct
+      cid="countdown-progress"
+      target="2026-02-14T00:00:00"
+      style="width: 300px; height: 20px"
+    ></v-rct>
+
+    <v-rct
+      cid="emoji-rain"
+      emojis="💖✨🎉🍀"
+      count="30"
+      style="height: 200px"
+    ></v-rct>
+
+    <v-rct
+      cid="color-box"
+      style="width: 150px; height: 150px"
+      interval="300"
+    ></v-rct>
+
+    <v-rct cid="notification" text="Task Completed!" duration="5000"></v-rct>
+    <v-rct cid="weather" city="Bandung"></v-rct>
+    <v-rct cid="news-ticker" ticker="News 1|News 2|News 3" speed="2"></v-rct>
+    <v-rct cid="todo" storage-key="my-todo" style="width: 300px"></v-rct>
+    <v-rct cid="network-status" style="font-size: 16px; color: green"></v-rct>
+    <v-rct cid="battery-status" style="font-size: 16px; color: black"></v-rct>
+    <!-- <v-rct cid="clipboard-copy" text="Copy Me!" style="padding:5px 10px;background:#4CAF50;color:white;"></v-rct> -->
+    <v-rct
+      cid="dark-mode-toggle"
+      style="padding: 5px 10px; background: #000; color: #fff"
+    ></v-rct>
+    <v-rct
+      cid="sidebar-drawer"
+      position="left"
+      width="280px"
+      theme="3d"
+      esc-close="true"
+    >
+      <h2>Cyber Menu</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Analytics</li>
+        <li>Profile</li>
+        <li>Settings</li>
+      </ul>
+    </v-rct>
+    <!-- LIGHT THEME -->
+    <v-rct
+      cid="search-box"
+      placeholder="Search items..."
+      width="280px"
+      theme="light"
+    ></v-rct>
+
+    <!-- DARK THEME -->
+    <v-rct
+      cid="search-box"
+      placeholder="Search items..."
+      width="280px"
+      theme="dark"
+    ></v-rct>
+
+    <!-- LIQUID-GLASS THEME -->
+
+    <v-rct
+      cid="search-box"
+      placeholder="Search items..."
+      width="280px"
+      theme="liquid-glass"
+    ></v-rct>
+
+    Vericitto import Cito from AppWidgets { use: map { lat: -6.2, lng: 106.8,
+    zoom: 15, height: "450px" } }
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="/core/AppWidgets.js"></script>
+
+    <!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AppWidgets.autoMount();
+
+      // Untuk navbar lama (jika ada)
+      const navEl = document.querySelector('#navbar');
+      if (navEl) {
+        const navbar = new Navbar('#navbar');
+        navbar.mount();
+      }
+    });
+
+    /* ================= PARTICLE BACKGROUND ================= */
+    const canvas = document.getElementById("particleCanvas");
+    const ctx = canvas.getContext("2d");
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = window.innerWidth + "px";
+      canvas.style.height = window.innerHeight + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    resize();
+    window.addEventListener("resize", resize);
+
+    const mouse = { x: null, y: null, radius: 120 };
+
+    window.addEventListener("mousemove", e => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * window.innerWidth;
+        this.y = Math.random() * window.innerHeight;
+        this.size = Math.random() * 3 + 1;
+        this.vx = Math.random() * 1.5 - 0.75;
+        this.vy = Math.random() * 1.5 - 0.75;
+      }
+
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > window.innerWidth) this.vx *= -1;
+        if (this.y < 0 || this.y > window.innerHeight) this.vy *= -1;
+
+        const dx = mouse.x - this.x;
+        const dy = mouse.y - this.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < mouse.radius) {
+          this.x -= dx / 12;
+          this.y -= dy / 12;
+        }
+      }
+
+      draw() {
+        ctx.fillStyle = "rgba(255,255,255,0.7)";
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    const particles = [];
+    for (let i = 0; i < 120; i++) particles.push(new Particle());
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => { p.update(); p.draw(); });
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+
+</body>
+</html> -->
+  </body>
+</html>
