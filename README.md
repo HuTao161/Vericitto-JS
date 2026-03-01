@@ -4,6 +4,12 @@ Vericitto JS adalah mini UI framework berbasis DSL (Domain Specific Language) ya
 Framework ini dirancang untuk membuat komponen UI secara declarative, ringkas, dan mudah digunakan tanpa harus menulis struktur JavaScript yang panjang.
 Vericitto JS berfokus pada kesederhanaan dan kejelasan konfigurasi melalui attribute.
 
+Untuk menggunakan Vericitto JS di projectmu, panggil file melalui CDN:
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/HuTao161/Vericitto-JS@main/js-framework/public/core/AppWidgets.js"></script>
+```
+
 // Konsep Dasar DSL Vericitto
 
 Vericitto JS menggunakan syntax khusus / DSL berupa:
@@ -76,7 +82,7 @@ Mengatur warna teks isi modal.
 
 // Contoh Penulisan DSL Vericitto JS
 
-`<v-rct`
+<v-rct
       cid="modal"
       title="Hello World"
       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -86,4 +92,4 @@ Mengatur warna teks isi modal.
       button-text-color="white"
       title-color="black"
       content-color="black">
-`</v-rct>`
+</v-rct>
