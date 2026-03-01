@@ -1,6 +1,6 @@
 // Vericitto JS 
 
-Vericitto JS adalah mini UI framework berbasis DSL (Domain Specific Language) yang menggunakan syntax khusus berbentuk custom tag HTML seperti <v-rct>. 
+Vericitto JS adalah mini UI framework berbasis DSL (Domain Specific Language) yang menggunakan syntax khusus berbentuk custom tag HTML seperti `<v-rct>`. 
 Framework ini dirancang untuk membuat komponen UI secara declarative, ringkas, dan mudah digunakan tanpa harus menulis struktur JavaScript yang panjang.
 Vericitto JS berfokus pada kesederhanaan dan kejelasan konfigurasi melalui attribute.
 
@@ -8,7 +8,7 @@ Vericitto JS berfokus pada kesederhanaan dan kejelasan konfigurasi melalui attri
 
 Vericitto JS menggunakan syntax khusus / DSL berupa:
 
-<v-rct>
+`<v-rct>`
 
 Tag ini bukan HTML standar, melainkan custom element yang diproses oleh engine Vericitto.
 Semua perilaku dan tampilan komponen dikontrol melalui attribute yang ditulis langsung di dalam tag tersebut.
@@ -24,7 +24,7 @@ CID adalah identifier unik yang berfungsi sebagai:
 * Referensi internal untuk event handling
 * Pencegah konflik antar komponen
 
-Setiap komponen <v-rct> wajib memiliki CID yang unik dalam satu halaman. CID dapat dianggap sebagai “ID internal khusus Vericitto” untuk mengontrol function komponen.
+Setiap komponen `<v-rct>` wajib memiliki CID yang unik dalam satu halaman. CID dapat dianggap sebagai “ID internal khusus Vericitto” untuk mengontrol function komponen.
 
 Komponen: Modal / Pop Up
 
@@ -76,7 +76,7 @@ Mengatur warna teks isi modal.
 
 // Contoh Penulisan DSL Vericitto JS
 
-<v-rct
+`<v-rct`
       cid="modal"
       title="Hello World"
       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -86,4 +86,4 @@ Mengatur warna teks isi modal.
       button-text-color="white"
       title-color="black"
       content-color="black">
-</v-rct>
+`</v-rct>`
