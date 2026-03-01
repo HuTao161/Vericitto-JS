@@ -20,7 +20,8 @@ Tag ini bukan HTML standar, melainkan custom element yang diproses oleh engine V
 Semua perilaku dan tampilan komponen dikontrol melalui attribute yang ditulis langsung di dalam tag tersebut.
 Pendekatan ini memungkinkan developer untuk mendefinisikan UI hanya dengan konfigurasi, bukan dengan manipulasi DOM manual.
 
-CID (Cito ID)
+`CID (Cito ID)`
+
 Vericitto JS menggunakan sistem CID (Cito ID).
 
 CID adalah identifier unik yang berfungsi sebagai:
@@ -44,41 +45,32 @@ Modal adalah jendela overlay yang muncul di atas halaman untuk:
 
 Dengan Vericitto JS, modal dibuat menggunakan satu tag DSL tanpa perlu membuat struktur div manual.
 
-Cara Menulis DSL Vericitto (Modal)
+`Cara Menulis DSL Vericitto (Modal)`
 
 Dalam Vericitto JS, modal terdiri dari beberapa komponen konfigurasi utama, yaitu:
 
-1. cid
-Identitas unik komponen (Cito ID).
-Digunakan untuk mengontrol dan membedakan setiap instance modal.
+```console
+1. cid : Identitas unik komponen (Cito ID). Digunakan untuk mengontrol dan membedakan setiap instance modal.
 
-2. title
-Judul utama modal.
-Berfungsi sebagai heading atau konteks dari isi pop up.
+2. title : Judul utama modal. Berfungsi sebagai heading atau konteks dari isi pop up.
 
-3. content
-Isi atau deskripsi yang ditampilkan dalam modal.
+3. content : Isi atau deskripsi yang ditampilkan dalam modal.
 
-4. button-text
-Teks tombol yang berfungsi untuk membuka modal.
+4. button-text : Teks tombol yang berfungsi untuk membuka modal.
 
-5. close-type
-Menentukan tipe tombol penutup modal.
+5. close-type : Menentukan tipe tombol penutup modal.
 Tersedia dua pilihan:
 * icon
 * text
 
-6. button-color
-Mengatur warna tombol pembuka.
+6. button-color : Mengatur warna tombol pembuka.
 
-7. button-text-color
-Mengatur warna teks tombol pembuka.
+7. button-text-color : Mengatur warna teks tombol pembuka.
 
-8. title-color
-Mengatur warna teks judul modal.
+8. title-color : Mengatur warna teks judul modal.
 
-9. content-color
-Mengatur warna teks isi modal.
+9. content-color : Mengatur warna teks isi modal.
+```
 
 `Contoh Penulisan DSL Vericitto JS`
 
