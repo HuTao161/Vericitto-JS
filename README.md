@@ -34,6 +34,8 @@ CID adalah identifier unik yang berfungsi sebagai:
 
 Setiap komponen `<v-rct>` wajib memiliki CID yang unik dalam satu halaman. CID dapat dianggap sebagai “ID internal khusus Vericitto” untuk mengontrol function komponen.
 
+`Contoh`
+
 Komponen: Modal / Pop Up
 
 Salah satu implementasi DSL dalam Vericitto JS adalah komponen Modal / Pop Up.
